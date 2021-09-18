@@ -1,29 +1,23 @@
 html {
     background: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
     touch-action: manipulation;
 }
 
-#click {
-    background: #05aeec;
-    border: none;
-    outline: none;
+#cookie {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: #1e1e1e;
+    transition: transform 0.3s ease-in-out;
 }
 
-#click:hover {
-    animation: size 0.3s ease-in-out forwards;
+#cookie:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    opacity: 90%;
 }
 
 #num {
@@ -31,13 +25,4 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     text-align: center;
-}
-
-@keyframes size {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
 }
