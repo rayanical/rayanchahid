@@ -2,6 +2,32 @@ html {
     background: #1e1e1e;
     overflow: hidden;
     touch-action: manipulation;
+    user-select: none;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 25px;
+}
+
+#cookieimg {
+    width: 50px;
+    height: 50px;
+}
+
+section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #cookie {
@@ -12,6 +38,9 @@ html {
     font-size: 20px;
     color: #1e1e1e;
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 200px;
+    z-index: 1;
+    position: absolute;
 }
 
 #cookie:hover {
@@ -25,4 +54,29 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     text-align: center;
+    padding-bottom: 6px;
+}
+
+#add {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 2;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    animation: GoUp 2s forwards linear;
+}
+
+p {
+    pointer-events: none;
+}
+
+@keyframes GoUp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+    }
 }
