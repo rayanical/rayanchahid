@@ -33,11 +33,7 @@ section {
 #cookie {
     width: 250px;
     height: 250px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: #1e1e1e;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     z-index: 1;
     position: absolute;
     background: url(1548612994.svg) no-repeat center;
@@ -45,8 +41,11 @@ section {
     border-radius: 50%;
 }
 
+#cookie:active {
+    transform: scale(0.95);
+}
+
 #cookie:hover {
-    transform: scale(1.05);
     cursor: pointer;
     opacity: 90%;
 }

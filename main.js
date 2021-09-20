@@ -27,5 +27,4 @@ function showClick(e) {
     element.setAttribute('id', 'add');
     element.appendChild(text);
     section.appendChild(element);
-    console.log(x);
 }
